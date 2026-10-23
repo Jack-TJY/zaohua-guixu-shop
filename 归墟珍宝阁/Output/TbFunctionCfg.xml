@@ -32,4 +32,12 @@
 		<saleId>10,99</saleId>
 		<npcId>10515</npcId>
 	</TbFunctionCfg>
+	<TbFunctionCfg>
+		<id>9005</id>
+		<name>符文</name>
+		<remark>归墟珍宝阁 符文</remark>
+		<type>1</type>
+		<saleId>99</saleId>
+		<npcId>10516</npcId>
+	</TbFunctionCfg>
 </ArrayOfTbFunctionCfg>
