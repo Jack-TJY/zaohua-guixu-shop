@@ -17,10 +17,11 @@ herb=pick(lambda i: top(i.get('typeId',0))==10 and i.get('gradeId') in G3)
 furn=pick(lambda i: i.get('typeId')==906 and i.get('gradeId') in G3)
 gong=pick(lambda i: top(i.get('typeId',0))==3 and i.get('gradeId')==22)
 shu =pick(lambda i: top(i.get('typeId',0))==4 and i.get('gradeId')==22)
+rune=pick(lambda i: i.get('typeId')==911)
 BUILD=9001
-funcs=[(9001,'材料','11,99',11355),(9002,'功法','3',10491),(9003,'术法','4',10491),(9004,'灵草','10,99',10515)]
+funcs=[(9001,'材料','11,99',11355),(9002,'功法','3',10491),(9003,'术法','4',10491),(9004,'灵草','10,99',10515),(9005,'符文','99',10516)]
 # (row id, function, items, stock count)
-rows=[(9001,9001,mat,10),(9002,9001,ham,1),(9003,9002,gong,1),(9004,9003,shu,1),(9005,9004,herb,10),(9006,9004,furn,1)]
+rows=[(9001,9001,mat,10),(9002,9001,ham,1),(9003,9002,gong,1),(9004,9003,shu,1),(9005,9004,herb,10),(9006,9004,furn,1),(9007,9005,rune,1)]
 H='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
 def arr(name,entries):
     s=H+f'<ArrayOf{name} xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\n'
@@ -37,10 +38,10 @@ w('TbFindCfg',arr('TbFindCfg',[[('id',9001),('name','归墟珍宝阁不刷随机
 # 保留已有 mod Id，避免游戏把它当成新 mod
 _md=f'{OUT}/Config/modData.json'
 mid=json.load(open(_md,encoding='utf-8'))['Id'] if os.path.exists(_md) else uuid.uuid4().hex
-json.dump({"Id":mid,"name":"归墟珍宝阁","perview":"","description":"在终章归墟岛的奉仙镇新增建筑「归墟珍宝阁」，分四个柜台出售顶级货物：材料（四阶上品及以上材料、锻造锤）、功法、术法（天阶上品）、灵草（四阶上品及以上灵草、丹炉）。每30天补货。","language":0,"tags":["商店"],"gameVersion":"","isOpenSource":True,"author":"JIANYU TANG","authorId":0,"publishfileid":0,"dependency":[],"modVisibility":0,"changeLog":"1.0 初版"},open(f'{OUT}/Config/modData.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
+json.dump({"Id":mid,"name":"归墟珍宝阁","perview":"","description":"在终章归墟岛的奉仙镇新增建筑「归墟珍宝阁」，分五个柜台出售顶级货物：材料（四阶上品及以上材料、锻造锤）、功法、术法（天阶上品）、灵草（四阶上品及以上灵草、丹炉），另设符文柜台出售全部锻造符文。每30天补货。","language":0,"tags":["商店"],"gameVersion":"","isOpenSource":True,"author":"JIANYU TANG","authorId":0,"publishfileid":0,"dependency":[],"modVisibility":0,"changeLog":"1.1 新增符文柜台；1.0 初版"},open(f'{OUT}/Config/modData.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
 with open(f'{OUT}/商品清单.txt','w',encoding='utf-8') as f:
     for rid,fid,its,n in rows:
         fn=[x[1] for x in funcs if x[0]==fid][0]
         f.write(f'== {fn}（每种 {n} 个）\n')
         for i in its: f.write(f"  {i['id']}\t{loc.get(i['name'],i['name'])}\tgrade {i['gradeId']}\t价格 {i.get('price')}\tmaxCount {i.get('maxCount')}\n")
-print({k:len(v) for k,v in dict(mat=mat,ham=ham,herb=herb,furn=furn,gong=gong,shu=shu).items()})
+print({k:len(v) for k,v in dict(mat=mat,ham=ham,herb=herb,furn=furn,gong=gong,shu=shu,rune=rune).items()})

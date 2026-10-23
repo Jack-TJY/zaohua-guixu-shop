@@ -7,6 +7,6 @@
 		<place>2</place>
 		<buildIcon>Icon/build/wanbaolou</buildIcon>
 		<path>SceneBG/wanbaolou</path>
-		<functionId>9001,9002,9003,9004</functionId>
+		<functionId>9001,9002,9003,9004,9005</functionId>
 	</TbBuildCfg>
 </ArrayOfTbBuildCfg>
