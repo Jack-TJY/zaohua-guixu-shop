@@ -8,7 +8,14 @@ S=sys.argv[1]; OUT=sys.argv[2]
 types={e.find('id').text:(e.find('parent').text if e.find('parent') is not None else None) for e in ET.parse(f'{S}/data/TbTypeCfg').getroot()}
 def top(t): p=types.get(str(t)); return int(p) if p and p!='-1' else int(t)
 loc={e.find('id').text:e.find('Chinese').text for e in ET.parse(f'{S}/loc/TbItemCfgLocal').getroot()}
-items=[i for i in json.load(open(f'{S}/data/TbItemCfg',encoding='utf-8-sig')) if i.get('block',0)!=1]
+def sellable(i):
+    if i.get('block',0)==1: return False
+    # 没有价格或图标的是未完成的空白物品
+    if not i.get('price') or not i.get('iconPath'): return False
+    # 「困难-」版本与同名无前缀版本是同一本书，只保留无前缀的
+    if (loc.get(i['name']) or '').startswith('困难'): return False
+    return True
+items=[i for i in json.load(open(f'{S}/data/TbItemCfg',encoding='utf-8-sig')) if sellable(i)]
 def pick(f): return sorted([i for i in items if f(i)], key=lambda i:(i.get('gradeId',0),int(i['id']) if i['id'].isdigit() else 0))
 G3=set(range(312,316))      # 四阶上品及以上（锻造锤、丹炉）
 G4=set(range(310,316))      # 四阶下品及以上（材料、灵草）
@@ -42,7 +49,7 @@ w('TbFindCfg',arr('TbFindCfg',[[('id',9001),('name','归墟珍宝阁不刷随机
 # 保留已有 mod Id，避免游戏把它当成新 mod
 _md=f'{OUT}/Config/modData.json'
 mid=json.load(open(_md,encoding='utf-8'))['Id'] if os.path.exists(_md) else uuid.uuid4().hex
-json.dump({"Id":mid,"name":"归墟珍宝阁","perview":"","description":"在终章归墟岛的奉仙镇新增建筑「归墟珍宝阁」，分五个柜台出售顶级货物：材料（三阶上品及以上材料、四阶上品及以上锻造锤）、功法、术法（地阶上品至天阶上品）、灵草（三阶上品及以上灵草、四阶上品及以上丹炉），另设符文柜台出售全部锻造符文。每30天补货。","language":0,"tags":["商店"],"gameVersion":"","isOpenSource":True,"author":"JIANYU TANG","authorId":0,"publishfileid":0,"dependency":[],"modVisibility":0,"changeLog":"1.2 材料灵草扩充到三阶上品起，功法术法扩充到地阶上品起；1.1 新增符文柜台；1.0 初版"},open(f'{OUT}/Config/modData.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
+json.dump({"Id":mid,"name":"归墟珍宝阁","perview":"","description":"在终章归墟岛的奉仙镇新增建筑「归墟珍宝阁」，分五个柜台出售顶级货物：材料（三阶上品及以上材料、四阶上品及以上锻造锤）、功法、术法（地阶上品至天阶上品）、灵草（三阶上品及以上灵草、四阶上品及以上丹炉），另设符文柜台出售全部锻造符文。每30天补货。","language":0,"tags":["商店"],"gameVersion":"","isOpenSource":True,"author":"JIANYU TANG","authorId":0,"publishfileid":0,"dependency":[],"modVisibility":0,"changeLog":"1.4 去掉功法术法中重复的「困难-」版本和空白术法；1.3 新增灵石插件；1.2 材料灵草扩充到三阶上品起，功法术法扩充到地阶上品起；1.1 新增符文柜台；1.0 初版"},open(f'{OUT}/Config/modData.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
 with open(f'{OUT}/商品清单.txt','w',encoding='utf-8') as f:
     for rid,fid,its,n in rows:
         fn=[x[1] for x in funcs if x[0]==fid][0]
