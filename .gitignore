@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# 不上传游戏解包出来的原版数据
+unpacked/

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfTbFindCfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TbFindCfg>
+		<id>9001</id>
+		<name>归墟珍宝阁不刷随机商品</name>
+		<mapId>10</mapId>
+		<place>2</place>
+		<buildId>9001</buildId>
+		<weight>999</weight>
+		<count>0</count>
+		<layerId>4</layerId>
+	</TbFindCfg>
+</ArrayOfTbFindCfg>

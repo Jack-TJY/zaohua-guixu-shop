@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfTbFunctionCfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TbFunctionCfg>
+		<id>9001</id>
+		<name>材料</name>
+		<remark>归墟珍宝阁 材料</remark>
+		<type>1</type>
+		<saleId>11,99</saleId>
+		<npcId>11355</npcId>
+	</TbFunctionCfg>
+	<TbFunctionCfg>
+		<id>9002</id>
+		<name>功法</name>
+		<remark>归墟珍宝阁 功法</remark>
+		<type>1</type>
+		<saleId>3</saleId>
+		<npcId>10491</npcId>
+	</TbFunctionCfg>
+	<TbFunctionCfg>
+		<id>9003</id>
+		<name>术法</name>
+		<remark>归墟珍宝阁 术法</remark>
+		<type>1</type>
+		<saleId>4</saleId>
+		<npcId>10491</npcId>
+	</TbFunctionCfg>
+	<TbFunctionCfg>
+		<id>9004</id>
+		<name>灵草</name>
+		<remark>归墟珍宝阁 灵草</remark>
+		<type>1</type>
+		<saleId>10,99</saleId>
+		<npcId>10515</npcId>
+	</TbFunctionCfg>
+</ArrayOfTbFunctionCfg>

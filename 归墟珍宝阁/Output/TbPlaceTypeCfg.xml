@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfTbPlaceTypeCfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TbPlaceTypeCfg>
+		<id>238</id>
+		<name>1_238</name>
+		<buildId>46,2,3,16,9001</buildId>
+	</TbPlaceTypeCfg>
+</ArrayOfTbPlaceTypeCfg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfTbBuildCfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TbBuildCfg>
+		<id>9001</id>
+		<name>归墟珍宝阁</name>
+		<order>5</order>
+		<place>2</place>
+		<buildIcon>Icon/build/wanbaolou</buildIcon>
+		<path>SceneBG/wanbaolou</path>
+		<functionId>9001,9002,9003,9004</functionId>
+	</TbBuildCfg>
+</ArrayOfTbBuildCfg>
