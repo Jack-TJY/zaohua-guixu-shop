@@ -19,6 +19,15 @@
 - 每 30 天补货一次，按物品原价出售（城市商铺价格倍率 1.0）。
 - 不混入随机的低阶商品。
 
+## 可选：柜台灵石插件
+
+原版每个柜台持有的灵石是游戏代码写死的（200000 × 地图难度，归墟岛为 80 万），配置表改不了，所以把东西卖给珍宝阁时很快就会把柜台的灵石卖光。`plugin/` 下的 BepInEx 插件 `GuixuShopMoney.dll` 会在柜台**新开张或补货**（满 30 天，或在交易界面手动刷新）时把灵石设为 **1 亿**，两次补货之间花完了就没了，和原版规则一样。只影响归墟珍宝阁，其他商店不变。
+
+- 需要先安装 [BepInEx 5](https://github.com/BepInEx/BepInEx/releases)（x64），把 `GuixuShopMoney.dll` 放进游戏目录的 `BepInEx\plugins\`。
+- 数额可在 `BepInEx\config\zaohua.guixushop.money.cfg` 的 `ShopMoney` 修改（首次运行游戏后生成）。
+- 已经开张的柜台要等到下次补货才会变成 1 亿。
+- 插件不能上传创意工坊，不装插件时数据 mod 照常可用。
+
 ## 安装
 
 1. 下载本仓库（Code → Download ZIP），解压。
@@ -44,6 +53,7 @@
 │   ├── TbShopFixCfg.xml     固定商品清单（id 9001–9009）
 │   └── TbFindCfg.xml        关闭这栋建筑的随机商品（id 9001）
 └── 商品清单.txt              人类可读的商品列表
+plugin/                      可选 BepInEx 插件：补货时把柜台灵石设为 1 亿
 tools/
 ├── extract.py               从游戏资源包解出原版配置表
 └── build.py                 根据原版配置表生成上面的 mod 文件
@@ -73,6 +83,18 @@ python tools/build.py unpacked 归墟珍宝阁
 ```
 
 `unpacked/` 是游戏原版数据，已在 `.gitignore` 中排除，请勿上传。
+
+## 编译插件
+
+需要 .NET SDK 6 或更高版本。把以下 dll 放进仓库根目录的 `lib/`（已在 `.gitignore` 中排除，不随仓库分发）：
+
+- 游戏 `Zaohua_Data\Managed\` 下的 `Assembly-CSharp.dll`、`UnityEngine.CoreModule.dll`、`UnityEngine.dll`
+- 游戏 `BepInEx\core\` 下的 `BepInEx.dll`、`0Harmony.dll`
+
+```bash
+dotnet build plugin -c Release
+# 输出：plugin/bin/Release/net472/GuixuShopMoney.dll
+```
 
 ## 声明
 
