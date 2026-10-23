@@ -76,12 +76,6 @@
   993945	空甲元妖功	grade 19	价格 11000	maxCount 1
   993953	兽王疾影诀	grade 19	价格 11000	maxCount 1
   993981	众魂归诀	grade 19	价格 13000	maxCount 1
-  994459	困难-万剑诛仙诀	grade 19	价格 13000	maxCount 1
-  994469	困难-洪荒玄武诀	grade 19	价格 12800	maxCount 1
-  994475	困难-劫运太雷经	grade 19	价格 13000	maxCount 1
-  994477	困难-八荒炎域功	grade 19	价格 12500	maxCount 1
-  994483	困难-万魂归川经	grade 19	价格 13000	maxCount 1
-  994484	困难-百劫火罡功	grade 19	价格 12000	maxCount 1
   992156	万古青帝典	grade 20	价格 40000	maxCount 1
   992191	千骨纳元诀	grade 20	价格 40000	maxCount 1
   992956	不动明王功	grade 20	价格 40000	maxCount 1
@@ -115,11 +109,6 @@
   993954	疾影如风典	grade 20	价格 28000	maxCount 1
   993982	天行魂雨诀	grade 20	价格 48000	maxCount 1
   994370	聚蛊溢血典	grade 20	价格 40000	maxCount 1
-  994473	困难-斩运金刀诀	grade 20	价格 40000	maxCount 1
-  994480	困难-天羽血魔功	grade 20	价格 40000	maxCount 1
-  994664	困难-万木符兵诀	grade 20	价格 40000	maxCount 1
-  994670	困难-乾坤炼火经	grade 20	价格 42000	maxCount 1
-  994763	困难-朱雀焚天诀	grade 20	价格 40000	maxCount 1
   992177	元始祖妖经	grade 21	价格 50000	maxCount 1
   992216	太阴尸毒真法	grade 21	价格 60000	maxCount 1
   992957	不灭圣体经 	grade 21	价格 60000	maxCount 1
@@ -151,12 +140,6 @@
   993983	魂海无涯诀	grade 21	价格 70000	maxCount 1
   994368	浴血惊魔功	grade 21	价格 60000	maxCount 1
   994428	周天星斗诀	grade 21	价格 33000	maxCount None
-  994466	困难-净世烬灭诀	grade 21	价格 68000	maxCount 1
-  994467	困难-建木通天功	grade 21	价格 64000	maxCount 1
-  994476	困难-九幽黄泉典	grade 21	价格 64000	maxCount 1
-  994479	困难-千兽化虚典	grade 21	价格 50000	maxCount 1
-  994482	困难-北冥鲲游功	grade 21	价格 60000	maxCount 1
-  994661	困难-不灭圣体经 	grade 21	价格 60000	maxCount 1
   994687	归墟圣典	grade 21	价格 70000	maxCount 1
   992219	玄阴摄魂大法	grade 22	价格 90000	maxCount 1
   992958	混沌真身经	grade 22	价格 80000	maxCount 1
@@ -181,20 +164,10 @@
   993121	紫霄神雷经	grade 22	价格 100000	maxCount 1
   993888	气血爆云诀	grade 22	价格 80000	maxCount 1
   994030	逍遥游天经	grade 22	价格 100000	maxCount 1
-  994463	困难-血髓燃灯法	grade 22	价格 80000	maxCount 1
-  994468	困难-大日焚天经	grade 22	价格 84000	maxCount 1
-  994472	困难-混沌真身经	grade 22	价格 80000	maxCount 1
-  994474	困难-劫运锻真经	grade 22	价格 80000	maxCount 1
-  994478	困难-万焰归墟功	grade 22	价格 82000	maxCount 1
-  994481	困难-太一真水诀	grade 22	价格 88000	maxCount 1
-  994662	困难-木皇天道经	grade 22	价格 85000	maxCount 1
-  994663	困难-万载长青诀	grade 22	价格 80000	maxCount 1
-  994669	困难-炎皇帝火经	grade 22	价格 78000	maxCount 1
 == 术法（每种 1 个）
   20049	半锋蓄元劲	grade 19	价格 7600	maxCount 1
   20310	大五行雷殛	grade 19	价格 10000	maxCount 1
   20905	八荒血崩掌	grade 19	价格 8700	maxCount 1
-  992255	化神雷劫	grade 19	价格 None	maxCount 1
   993135	庚金万锋斩	grade 19	价格 9000	maxCount 1
   993150	碎岳紫金绝	grade 19	价格 9200	maxCount 1
   993156	四合归一斩	grade 19	价格 7800	maxCount 1
@@ -238,24 +211,8 @@
   994351	大五行剑阵	grade 19	价格 10000	maxCount None
   994361	燃魂归墟	grade 19	价格 10000	maxCount 1
   994366	狂血沸腾	grade 19	价格 8700	maxCount 1
-  994372	大五行剑	grade 19	价格 None	maxCount None
   994376	罡气太元盾	grade 19	价格 9000	maxCount 1
   994388	罡元玄武盾	grade 19	价格 9000	maxCount 1
-  994464	困难-大五行雷殛	grade 19	价格 10000	maxCount 1
-  994542	困难-庚金万锋斩	grade 19	价格 9000	maxCount 1
-  994545	困难-崩尽葬苍生	grade 19	价格 9500	maxCount 1
-  994568	困难-怒涛覆海	grade 19	价格 9300	maxCount 1
-  994599	困难-万木镇洪荒	grade 19	价格 9000	maxCount 1
-  994600	困难-蚀骨燎原	grade 19	价格 8700	maxCount 1
-  994619	困难-燃魂归墟	grade 19	价格 10000	maxCount 1
-  994623	困难-万焚烬界火	grade 19	价格 9100	maxCount 1
-  994624	困难-熔宝炽焰斩	grade 19	价格 8500	maxCount 1
-  994646	困难-万钧地裂	grade 19	价格 9000	maxCount 1
-  994647	困难-玄壤碎虚	grade 19	价格 9000	maxCount 1
-  994648	困难-千蛊蚀骨	grade 19	价格 8700	maxCount 1
-  994649	困难-蛮骨碎岳	grade 19	价格 7600	maxCount 1
-  994659	困难-雷震八方	grade 19	价格 10000	maxCount 1
-  994677	困难-炎盾回生	grade 19	价格 8800	maxCount 1
   20634	御疾罡风	grade 20	价格 36000	maxCount 1
   20636	踏天惊鸿步	grade 20	价格 30000	maxCount 1
   20902	天魈搜魂术	grade 20	价格 36000	maxCount 1
@@ -302,17 +259,6 @@
   994347	万劫归一斩	grade 20	价格 28000	maxCount 1
   994377	玄气灵虚天幕	grade 20	价格 36000	maxCount 1
   994389	玄元太虚衣	grade 20	价格 36000	maxCount 1
-  994445	灭世雷劫	grade 20	价格 None	maxCount 1
-  994461	困难-双蛊重天	grade 20	价格 28000	maxCount 1
-  994546	困难-庚金神光	grade 20	价格 30000	maxCount 1
-  994547	困难-一重诛魔金光	grade 20	价格 36000	maxCount 1
-  994574	困难-百浪入沧海	grade 20	价格 36000	maxCount 1
-  994576	困难-八荒海啸破	grade 20	价格 34000	maxCount 1
-  994625	困难-紫焰融天	grade 20	价格 30000	maxCount 1
-  994626	困难-火蛇焚野焰	grade 20	价格 36000	maxCount 1
-  994650	困难-一土归元绝	grade 20	价格 36000	maxCount 1
-  994651	困难-人甲裂穹罡	grade 20	价格 36000	maxCount 1
-  994682	困难-血泽回春	grade 20	价格 34000	maxCount 1
   20638	冲霄九剑	grade 21	价格 55000	maxCount 1
   992217	天魔化血神光	grade 21	价格 46000	maxCount 1
   993137	二重斩仙金罡	grade 21	价格 52000	maxCount 1
@@ -354,21 +300,8 @@
   994026	炎龙铸宝	grade 21	价格 40000	maxCount 1
   994352	大三极剑阵	grade 21	价格 57000	maxCount None
   994358	七煞归墟斩	grade 21	价格 46000	maxCount 1
-  994371	大三极剑	grade 21	价格 None	maxCount None
   994378	玄气太初神壁	grade 21	价格 52000	maxCount 1
   994390	玄元混元体	grade 21	价格 52000	maxCount 1
-  994462	困难-血衍大道生	grade 21	价格 40000	maxCount 1
-  994498	困难-冲霄九剑	grade 21	价格 55000	maxCount 1
-  994501	困难-天魔化血神光	grade 21	价格 46000	maxCount 1
-  994548	困难-二重斩仙金罡	grade 21	价格 52000	maxCount 1
-  994577	困难-千涛惊沧海	grade 21	价格 52000	maxCount 1
-  994578	困难-太一真水咒	grade 21	价格 48000	maxCount 1
-  994601	困难-轮回朽木劫	grade 21	价格 44000	maxCount 1
-  994602	困难-万蛊噬心咒	grade 21	价格 46000	maxCount 1
-  994627	困难-火龙腾空炎	grade 21	价格 52000	maxCount 1
-  994652	困难-五岳镇天斩	grade 21	价格 52000	maxCount 1
-  994653	困难-地甲镇虚壁	grade 21	价格 52000	maxCount 1
-  994660	困难-寒冰万古寂	grade 21	价格 52000	maxCount 1
   992154	雷矛贯日	grade 22	价格 80000	maxCount 1
   993138	三重弑神金域	grade 22	价格 70000	maxCount 1
   993153	三才金极归墟	grade 22	价格 70000	maxCount 1
@@ -404,21 +337,6 @@
   994362	燃魂破虚无	grade 22	价格 70000	maxCount 1
   994379	玄气混沌真身	grade 22	价格 64000	maxCount 1
   994391	玄元无漏身	grade 22	价格 64000	maxCount 1
-  994458	困难-沧溟无量劫	grade 22	价格 60000	maxCount 1
-  994499	困难-化御碎诸天	grade 22	价格 68000	maxCount 1
-  994500	困难-妖噬诸天灭	grade 22	价格 54000	maxCount 1
-  994502	困难-魂归太初无	grade 22	价格 70000	maxCount 1
-  994503	困难-魂灭纪元终	grade 22	价格 70000	maxCount 1
-  994549	困难-三重弑神金域	grade 22	价格 70000	maxCount 1
-  994579	困难-万潮撼沧海	grade 22	价格 66000	maxCount 1
-  994580	困难-沧海龙吟剑	grade 22	价格 70000	maxCount 1
-  994603	困难-天道青龙灭	grade 22	价格 68000	maxCount 1
-  994604	困难-万骨皆灭斩	grade 22	价格 62000	maxCount 1
-  994620	困难-燃魂破虚无	grade 22	价格 70000	maxCount 1
-  994628	困难-祖妖屠天道	grade 22	价格 54000	maxCount 1
-  994629	困难-火凤涅槃火	grade 22	价格 60000	maxCount 1
-  994654	困难-九幽吞土罡	grade 22	价格 56000	maxCount 1
-  994655	困难-天甲归虚无	grade 22	价格 64000	maxCount 1
 == 灵草（每种 10 个）
   992351	天道金纹草	grade 310	价格 6000	maxCount 1
   992352	万兵朝宗藤	grade 310	价格 5000	maxCount 1
